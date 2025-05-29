@@ -10,19 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b492ba8-d3c5-41d3-9109-2a108918c989" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/PostMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -568,7 +560,7 @@
       <workItem from="1748401198180" duration="8432000" />
       <workItem from="1748475287496" duration="3441000" />
       <workItem from="1748478753262" duration="9866000" />
-      <workItem from="1748488887656" duration="14789000" />
+      <workItem from="1748488887656" duration="17454000" />
     </task>
     <servers />
   </component>

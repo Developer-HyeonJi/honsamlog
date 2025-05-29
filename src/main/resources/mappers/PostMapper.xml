@@ -77,6 +77,7 @@
             tb_post
         WHERE
             delete_yn = 0
+            <include refid="search"/>
         ORDER BY
             id DESC
         LIMIT #{pagination.limitStart}, #{recordSize}
@@ -89,5 +90,33 @@
             tb_post
         WHERE
             delete_yn = 0
+        <include refid="search"/>
     </select>
+
+    <sql id="search" >
+        <if test="keyword != null and keyword != ''">
+            <choose>
+                <when test="searchType != null and searchType != ''">
+                    <choose>
+                        <when test="'title'.equals(searchType)">
+                            AND title LIKE CONCAT('%', #{keyword}, '%')
+                        </when>
+                        <when test="'content'.equals(searchType)">
+                            AND content LIKE CONCAT('%', #{keyword}, '%')
+                        </when>
+                        <when test="'writer'.equals(searchType)">
+                            AND writer LIKE CONCAT('%', #{keyword}, '%')
+                        </when>
+                    </choose>
+                </when>
+                <otherwise>
+                    AND (
+                        title LIKE CONCAT('%', #{keyword}, '%')
+                        OR content LIKE CONCAT('%', #{keyword}, '%')
+                        OR writer LIKE CONCAT('%', #{keyword}, '%')
+                    )
+                </otherwise>
+            </choose>
+        </if>
+    </sql>
 </mapper>
