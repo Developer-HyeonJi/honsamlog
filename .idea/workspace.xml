@@ -9,7 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b492ba8-d3c5-41d3-9109-2a108918c989" name="Changes" comment="" />
+    <list default="true" id="7b492ba8-d3c5-41d3-9109-2a108918c989" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/honsamlog/PostServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +133,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/kamja/Documents/GitHub/honsamlog/src/main/resources/static",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -172,23 +186,7 @@
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.HonsamlogApplication">
-    <configuration name="HonsamlogApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="honsamlog.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.honsamlog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.honsamlog" />
-      <option name="MAIN_CLASS_NAME" value="com.honsamlog.HonsamlogApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PostServiceTest.saveByForeach">
     <configuration name="HonsamlogApplicationTests.testBySqlSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="honsamlog.test" />
       <extension name="coverage">
@@ -248,6 +246,22 @@
       <option name="PACKAGE_NAME" value="com.honsamlog" />
       <option name="MAIN_CLASS_NAME" value="com.honsamlog.PostMapperTest" />
       <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceTest.saveByForeach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="honsamlog.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.honsamlog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.honsamlog" />
+      <option name="MAIN_CLASS_NAME" value="com.honsamlog.PostServiceTest" />
+      <option name="METHOD_NAME" value="saveByForeach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -508,7 +522,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.HonsamlogApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.PostServiceTest.saveByForeach" />
       <item itemvalue="JUnit.HonsamlogApplicationTests.testBySqlSessionFactory" />
       <item itemvalue="JUnit.PostMapperTest.findById" />
       <item itemvalue="JUnit.PostMapperTest.save" />
@@ -518,11 +532,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostServiceTest.saveByForeach" />
         <item itemvalue="JUnit.PostMapperTest.update" />
         <item itemvalue="JUnit.PostMapperTest.findById" />
         <item itemvalue="JUnit.PostMapperTest.save" />
         <item itemvalue="JUnit.HonsamlogApplicationTests.testBySqlSessionFactory" />
-        <item itemvalue="JUnit.HonsamlogApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -554,6 +568,7 @@
       <workItem from="1748401198180" duration="8432000" />
       <workItem from="1748475287496" duration="3441000" />
       <workItem from="1748478753262" duration="9866000" />
+      <workItem from="1748488887656" duration="14789000" />
     </task>
     <servers />
   </component>

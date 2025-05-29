@@ -1,13 +1,12 @@
 package com.honsamlog.domain.post;
 
 import com.honsamlog.common.dto.MessageDto;
+import com.honsamlog.common.dto.SearchDto;
+import com.honsamlog.common.paging.PagingResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,11 +16,6 @@ public class PostController {
 
     private final PostService postService;
 
-    // 게시글 작성 페이지
-//    @GetMapping("/post/write.do")
-//    public String openPostWrite(Model model) {
-//        return "post/write";
-//    }
     @GetMapping("/post/write.do")
     public String openPostWrite(@RequestParam(value="id", required = false) final Long id, Model model) {
         if(id != null) {
@@ -31,11 +25,11 @@ public class PostController {
         return "post/write";
     }
 
-    //게시글 리스트 페이지
+    // 게시글 리스트 페이지
     @GetMapping("/post/list.do")
-    public String openPostList(Model model) {
-        List<PostResponse> posts = postService.findAllPost();
-        model.addAttribute("posts", posts);
+    public String openPostList(@ModelAttribute("params") final SearchDto params, Model model) {
+        PagingResponse<PostResponse> response = postService.findAllPost(params);
+        model.addAttribute("response", response);
         return "post/list";
     }
 
