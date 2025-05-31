@@ -1,9 +1,12 @@
 package com.honsamlog.domain.comment;
 
+import com.honsamlog.common.paging.Pagination;
+import com.honsamlog.common.paging.PagingResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -33,8 +36,22 @@ public class CommentService {
         return id;
     }
 
-    public List<CommentResponse> findAllComment(final Long postId){
-        return commentMapper.findAll(postId);
+    public PagingResponse<CommentResponse> findAllComment(final CommentSearchDto params){
+        int count = commentMapper.count(params);
+        if(count < 1) {
+            return new PagingResponse<>(Collections.emptyList(), null);
+        }
+
+        Pagination pagination = new Pagination(count, params);
+        List<CommentResponse> list;
+        try {
+            list = commentMapper.findAll(params);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e; // 또는 return ResponseEntity로 감싸서 에러 응답
+        }
+        return new PagingResponse<>(list, pagination);
+
     }
 
 }

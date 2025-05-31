@@ -16,7 +16,7 @@ public interface CommentMapper {
     //댓글 삭제
     void deleteById(Long id);
     //댓글 리스트 조회
-    List<CommentResponse> findAll(Long postId);
+    List<CommentResponse> findAll (CommentSearchDto params);
     //댓글 수 카운팅
-    //int count(Long postId);
+    int count(CommentSearchDto params);
 }
