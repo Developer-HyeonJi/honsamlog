@@ -3,7 +3,11 @@ package com.honsamlog.domain.post;
 import com.honsamlog.common.dto.MessageDto;
 import com.honsamlog.common.dto.SearchDto;
 import com.honsamlog.common.paging.PagingResponse;
+import com.honsamlog.domain.file.FileRequest;
+import com.honsamlog.domain.file.FileService;
+import com.honsamlog.domain.file.FileUtils;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -12,11 +16,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class PostController {
 
     private final PostService postService;
+    private final FileService fileService;
+    private final FileUtils fileUtils;
 
     // 사용자에게 메시지를 전달하고, 페이지를 리다이렉트 한다.
     private String showMessageAndRedirect(final MessageDto params, Model model) {
@@ -66,15 +73,6 @@ public class PostController {
     }
 
 
-    // 신규 게시글 생성
-    @PostMapping("/post/save.do")
-    public String savePost(final PostRequest params, Model model) {
-        postService.savePost(params);
-        MessageDto message = new MessageDto("게시글 생성이 완료되었습니다.", "/post/list.do", RequestMethod.GET, null);
-        return showMessageAndRedirect(message, model);
-    }
-
-
     // 기존 게시글 수정
     @PostMapping("/post/update.do")
     public String updatePost(final PostRequest params, final SearchDto queryParams, Model model) {
@@ -91,5 +89,22 @@ public class PostController {
         MessageDto message = new MessageDto("게시글 삭제가 완료되었습니다.", "/post/list.do", RequestMethod.GET, queryParamsToMap(queryParams));
         return showMessageAndRedirect(message, model);
     }
+
+    // 신규 게시글 생성
+    @PostMapping("/post/save.do")
+    public String savePost(final PostRequest params, Model model) {
+        log.info("게시글 저장 요청 받음: 제목 = {}, 첨부파일 수 = {}", params.getTitle(), params.getFiles() != null ? params.getFiles().size() : 0);
+
+        Long id = postService.savePost(params);
+
+        List<FileRequest> files = fileUtils.uploadFiles(params.getFiles());
+        log.info("파일 처리 결과: {}개 파일 처리됨", files.size());
+
+        fileService.saveFiles(id, files);
+
+        MessageDto message = new MessageDto("게시글 생성이 완료되었습니다.", "/post/list.do", RequestMethod.GET, null);
+        return showMessageAndRedirect(message, model);
+    }
+
 
 }

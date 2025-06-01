@@ -10,12 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b492ba8-d3c5-41d3-9109-2a108918c989" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771415a1-2fa2-40ce-8cab-fadfcea29188/storage_v2/_src_/schema/board.5u6YBQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/honsamlog/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/honsamlog/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/member/MemberRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/member/MemberRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/honsamlog/domain/post/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/honsamlog/domain/post/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/honsamlog/domain/post/PostRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/honsamlog/domain/post/PostRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/post/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/post/write.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/honsamlog/domain/post/PostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +55,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -134,11 +140,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -568,7 +574,10 @@
       <workItem from="1748562703184" duration="13023000" />
       <workItem from="1748698773108" duration="3582000" />
       <workItem from="1748730537209" duration="2550000" />
-      <workItem from="1748733108196" duration="5710000" />
+      <workItem from="1748733108196" duration="6010000" />
+      <workItem from="1748759335602" duration="3798000" />
+      <workItem from="1748763172300" duration="1648000" />
+      <workItem from="1748768189780" duration="1496000" />
     </task>
     <servers />
   </component>
